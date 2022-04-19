@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2; }
+
 .navBlack {
   background: #2e2e2e;
   color: #c6c6c6; }
@@ -43,7 +48,8 @@
 
 .main_container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/home-background.svg");
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100vh; }
   @media (max-width: 992px) {
     .main_container {
       background-position: center; } }
@@ -55,6 +61,11 @@
     z-index: 100 !important;
     background: transparent !important;
     color: #c6c6c6 !important; }
+    @media (max-width: 992px) {
+      .container header {
+        display: flex;
+        flex-direction: column !important;
+        gap: 20px; } }
     .container header a img {
       color: #c6c6c6; }
     .container header ul {
@@ -64,9 +75,155 @@
         font-size: 16px !important;
         font-weight: 500; }
       .container header ul li .current {
-        color: #CD0A34 !important; }
+        color: #cd0a34 !important; }
+    .container header .searchButton {
+      height: 40px;
+      width: 40px;
+      border-radius: 50% !important;
+      background-color: #b2092a !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+      .container header .searchButton img {
+        height: 18px;
+        width: 18px; }
 
-footer {
-  border-bottom: 10px #B2092A solid;
-  background: #2E2E2E;
+#main {
+  min-height: 100vh !important; }
+
+.mainContent {
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 50px !important;
+  height: calc(100%) !important; }
+  @media (max-width: 575px) {
+    .mainContent {
+      padding-inline: 0 !important; } }
+  .mainContent div {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+    .mainContent div p {
+      font-size: 32px;
+      margin: 0; }
+      @media (max-width: 575px) {
+        .mainContent div p {
+          font-size: 18px; } }
+    .mainContent div h1 {
+      font-size: 78px;
+      font-weight: 400; }
+      @media (max-width: 1200px) {
+        .mainContent div h1 {
+          font-size: 60px; } }
+      @media (max-width: 575px) {
+        .mainContent div h1 {
+          font-size: 40px; } }
+      .mainContent div h1 strong {
+        font-weight: 900; }
+    .mainContent div button {
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+      width: 290px;
+      background-color: transparent;
+      color: #fff;
+      font-weight: 700;
+      border: 4px solid #b2092a;
+      border-radius: 15px; }
+
+.selectVehicle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  position: relative;
+  border-radius: 20px !important;
+  top: -100px;
+  background: #fff;
+  padding: 0 !important;
+  overflow: hidden; }
+  @media (max-width: 992px) {
+    .selectVehicle {
+      position: static;
+      margin-top: 50px; } }
+  .selectVehicle .bg-img {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/Enmascarar grupo 8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px; }
+    @media (max-width: 992px) {
+      .selectVehicle .bg-img {
+        overflow: hidden; } }
+    .selectVehicle .bg-img p {
+      font-size: 22px;
+      font-weight: 900; }
+  @media (max-width: 992px) {
+    .selectVehicle .form-content {
+      width: 100% !important;
+      padding: 40px 20px !important;
+      margin: 0 auto; } }
+  .selectVehicle .form-content input,
+  .selectVehicle .form-content select {
+    margin: 5px 5px;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    width: 100%;
+    padding: 10px 15px !important; }
+    @media (max-width: 992px) {
+      .selectVehicle .form-content input,
+      .selectVehicle .form-content select {
+        margin: 5px 0; } }
+  .selectVehicle .form-content .selects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 !important; }
+    @media (max-width: 992px) {
+      .selectVehicle .form-content .selects {
+        flex-direction: column;
+        gap: 0;
+        width: 100%; } }
+  .selectVehicle .form-content .buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .selectVehicle .form-content .buttonWrapper button {
+      width: 100%;
+      border: none;
+      border-radius: 15px;
+      background-color: #b2092a;
+      color: #fff;
+      font-size: 18px;
+      height: 46px; }
+  @media (max-width: 992px) {
+    .selectVehicle .form-content .main_content_row2 {
+      padding: 0 !important; } }
+  .selectVehicle .form-content .main_content_row2 .dataTime {
+    position: relative; }
+    .selectVehicle .form-content .main_content_row2 .dataTime img {
+      position: absolute;
+      top: 19px;
+      right: 20px; }
+
+.footer {
+  border-bottom: 10px #b2092a solid;
+  background: #2e2e2e;
   color: #c6c6c6 !important; }
+  .footer__item {
+    color: #c6c6c6 !important;
+    display: flex;
+    gap: 10px;
+    margin: 30px 0; }
+    .footer__item .item {
+      display: flex;
+      gap: 20px; }

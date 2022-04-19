@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/boostrap.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
   <title>Automare</title>
 </head>
 
@@ -56,9 +62,8 @@
   <div class="main_container">
 
 
-    <div class="container ">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <div class="container" id="main">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
         <a href="/">
           <img src="./assets/img/Logo-Automare-Blanco.svg" alt="">
         </a>
@@ -71,68 +76,73 @@
           <li><a href="#" class="nav-link px-2 link-light">Contacto</a></li>
         </ul>
 
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
+        <div class="searchButton">
+          <img src="./assets/icons/Grupo 243.png" alt="">
         </div>
       </header>
 
 
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2">Columns with icons</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection" />
-              </svg>
-            </div>
-            <h2>Featured title</h2>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-              probably just keep going until we run out of words.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#chevron-right" />
-              </svg>
-            </a>
-          </div>
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#people-circle" />
-              </svg>
-            </div>
-            <h2>Featured title</h2>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-              probably just keep going until we run out of words.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#chevron-right" />
-              </svg>
-            </a>
-          </div>
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2" />
-              </svg>
-            </div>
-            <h2>Featured title</h2>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-              probably just keep going until we run out of words.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#chevron-right" />
-              </svg>
-            </a>
-          </div>
+      <div class="mainContent container px-4 py-5">
+        <div class="row col-lg-7">
+          <p>Alquileres desde $50/día</p>
+          <h1>Llévate lo mejor. <br>
+            <strong>Reserva Ahora.</strong>
+          </h1>
+          <button>Reservar ya!</button>
         </div>
       </div>
     </div>
   </div>
+
+  <div
+    class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 rounded-3 selectVehicle shadow-lg">
+    <div class=" bg-img col-lg-3 row-lg-12">
+      <p>Encuentra <br> el vehículo que cumpla con tus expectativas aqui.</p>
+    </div>
+    <div class="form-content row col-lg-9">
+      <div class="row col-lg-6">
+        <input class="form-control" type="text" placeholder="Zona de recogida" aria-label="Zona de recogida">
+        <input class="form-control" type="text" placeholder="Zona de retorno" aria-label="default input example">
+        <div class="selects">
+          <select class="form-select" aria-label="Residencia: USA" placeholder="Residencia: USA"
+            aria-placeholder="Residencia: USA">
+            <option selected>Residencia: USA</option>
+            <option value="1">Residencia: RD</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Edad: 25+</option>
+            <option value="1">Edad: 40+</option>
+          </select>
+        </div>
+      </div>
+      <div class="main_content_row2 row col-lg-6">
+        <div class="dataTime col-lg-7">
+          <input class="form-control" placeholder="Fecha de salida" />
+          <img src="./assets/icons/time.svg">
+        </div>
+        <div class="col-lg-5">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Edad: 25+</option>
+            <option value="1">Edad: 40+</option>
+          </select>
+        </div>
+        <div class=" dataTime col-lg-7">
+          <input class="form-control" placeholder="Fecha de salida" />
+          <img src="./assets/icons/time.svg">
+        </div>
+        <div class="col-lg-5">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Edad: 25+</option>
+            <option value="1">Edad: 40+</option>
+          </select>
+        </div>
+        <div class="buttonWrapper">
+          <button>Selecciona Vehículo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <div class="container my-5">
@@ -156,24 +166,28 @@
 
 
 
-  <footer class="bd-footer py-5 mt-5 ">
-    <div class="container py-5">
+  <footer class="footer bd-footer py-5 mt-5 ">
+    <div class="container ">
       <div class="row">
         <div class="col-lg-3 mb-3">
           <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
             aria-label="Bootstrap">
             <img src="./assets/img/Logo-Automare-Blanco.svg" alt="logo">
           </a>
-          <ul class="list-unstyled small text-muted">
-            <li class="mb-2">Designed and built with all the love in the world by the <a
-                href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a
-                href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
-            <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
-                rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/"
-                target="_blank" rel="license noopener">CC BY
-                3.0</a>.</li>
-            <li class="mb-2">Currently v5.0.2.</li>
-          </ul>
+          <div class="footer__item">Nuestro compromiso es ser la empresa modelo en ventas y rentas de vehículos más
+            grande e
+            innovadora del país, reconocida nacional e internacionalmente, siendo la mejor empresa en satisfacer todas
+            necesidades de nuestros clientes.</div>
+          <div class="footer__item">
+            <div class="item">
+              <div class="item__icon">
+                <img src="./assets/icons/ubicacion.svg" alt="ubicacion">
+              </div>
+              <div class="item__text">
+                <p>Autopista. Duarte KM 3 1/2. <br> Pontón, La Vega, Rep. Dom. </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-6 col-lg-2 offset-lg-1 mb-3">
           <h5>Links</h5>

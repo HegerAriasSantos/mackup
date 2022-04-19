@@ -1,3 +1,8 @@
+html,
+body {
+	font-family: "Roboto", sans-serif;
+	background: #f2f2f2;
+}
 .navBlack {
 	background: #2e2e2e;
 	color: #c6c6c6;
@@ -53,6 +58,7 @@
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("/assets/img/home-background.svg");
 	background-size: cover;
+	min-height: 100vh;
 	@media (max-width: 992px) {
 		background-position: center;
 	}
@@ -62,6 +68,11 @@
 	color: #c6c6c6 !important;
 	// filter: brightness(3);
 	header {
+		@media (max-width: 992px) {
+			display: flex;
+			flex-direction: column !important;
+			gap: 20px;
+		}
 		z-index: 100 !important;
 		background: transparent !important;
 		color: #c6c6c6 !important;
@@ -73,23 +84,193 @@
 		ul {
 			z-index: 100 !important;
 			gap: 30px !important;
-      li{
-        a{
-          font-size: 16px !important;
-          font-weight: 500;
-        }
-        .current{
-          color: #CD0A34 !important;
-        }
-      }
+			li {
+				a {
+					font-size: 16px !important;
+					font-weight: 500;
+				}
+				.current {
+					color: #cd0a34 !important;
+				}
+			}
+		}
+		.searchButton {
+			height: 40px;
+			width: 40px;
+			border-radius: 50% !important;
+			background-color: #b2092a !important ;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			img {
+				height: 18px;
+				width: 18px;
+			}
+		}
+	}
+}
+#main {
+	min-height: 100vh !important;
+}
+
+.mainContent {
+	display: flex !important;
+	align-items: center !important;
+	margin-top: 50px !important;
+	height: calc(100%) !important;
+	@media (max-width: 575px) {
+		padding-inline: 0 !important;
+	}
+
+	div {
+		height: 100%;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		p {
+			font-size: 32px;
+			@media (max-width: 575px) {
+				font-size: 18px;
+			}
+			margin: 0;
+		}
+		h1 {
+			font-size: 78px;
+			font-weight: 400;
+			@media (max-width: 1200px) {
+				font-size: 60px;
+			}
+			@media (max-width: 575px) {
+				font-size: 40px;
+			}
+			strong {
+				font-weight: 900;
+			}
+		}
+		button {
+			padding: 1rem 1.5rem;
+			font-size: 1.2rem;
+			width: 290px;
+			background-color: transparent;
+			color: #fff;
+			font-weight: 700;
+			border: 4px solid #b2092a;
+			border-radius: 15px;
+		}
+	}
+}
+.selectVehicle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 200px;
+	position: relative;
+	border-radius: 20px !important;
+	top: -100px;
+	background: #fff;
+	padding: 0 !important;
+	overflow: hidden;
+	@media (max-width: 992px) {
+		position: static;
+		margin-top: 50px;
+	}
+
+	.bg-img {
+		width: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url("../assets/img/Enmascarar\ grupo\ 8.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		height: 200px;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		padding: 20px;
+		@media (max-width: 992px) {
+			overflow: hidden;
+		}
+		p {
+			font-size: 22px;
+			font-weight: 900;
+		}
+	}
+	.form-content {
+		@media (max-width: 992px) {
+			width: 100% !important;
+			padding: 40px 20px !important;
+			margin: 0 auto;
+		}
+		input,
+		select {
+			margin: 5px 5px;
+			border-radius: 8px;
+			border: 1px solid #cecece;
+			width: 100%;
+			padding: 10px 15px !important;
+			@media (max-width: 992px) {
+				margin: 5px 0;
+			}
+		}
+		.selects {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			padding: 0 !important;
+			@media (max-width: 992px) {
+				flex-direction: column;
+				gap: 0;
+				width: 100%;
+			}
+		}
+		.buttonWrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			button {
+				width: 100%;
+				border: none;
+				border-radius: 15px;
+				background-color: #b2092a;
+				color: #fff;
+				font-size: 18px;
+				height: 46px;
+			}
+		}
+		.main_content_row2 {
+			@media (max-width: 992px) {
+				padding: 0 !important;
+			}
+
+			.dataTime {
+				position: relative;
+
+				img {
+					position: absolute;
+					top: 19px;
+					right: 20px;
+				}
+			}
 		}
 	}
 }
 
-
-
-footer{
-  border-bottom: 10px #B2092A solid;
-  background: #2E2E2E;
-  color:#c6c6c6 !important;
+.footer {
+	border-bottom: 10px #b2092a solid;
+	background: #2e2e2e;
+	color: #c6c6c6 !important;
+	&__item {
+		color: #c6c6c6 !important;
+		display: flex;
+		gap: 10px;
+    margin: 30px 0;
+    .item{
+      display: flex;
+      gap: 20px;
+    }
+	}
 }
