@@ -65,10 +65,8 @@ body {
 		url("/assets/img/home-background.svg");
 	background-attachment: fixed;
 	background-size: cover;
-	min-height: 100vh;
-	@media (max-width: 992px) {
-		background-position: center;
-	}
+	min-height: 730px;
+	height: 100vh;
 }
 .container {
 	z-index: 100 !important;
