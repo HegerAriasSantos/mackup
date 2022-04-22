@@ -65,7 +65,18 @@
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li><a href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
           <li><a href="./about.html" class="nav-link px-2 link-light current">Sobre nosotros</a></li>
-          <li><a href="./servicies_taller.html" class="nav-link px-2 link-light">Servicios</a></li>
+          <li>
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+               Servicios
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="./servicies_taller.html">Taller</a></li>
+                <li><a class="dropdown-item" href="./servicies_rentcar.html">Rent Car</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="#" class="nav-link px-2 link-light">Galería</a></li>
           <li><a href="#" class="nav-link px-2 link-light">Contacto</a></li>
         </ul>
@@ -121,7 +132,7 @@
       <div class="compromise__missions">
         <div class="item">
           <div class="item__imgWrapper shadow">
-            
+
             <img src="./assets/icons/003-flag.svg" alt="">
           </div>
           <h3>Misión</h3>
@@ -131,8 +142,8 @@
         </div>
         <div class="item">
           <div class="item__imgWrapper shadow">
-            
-            <img  src="./assets/icons/001-target.svg" alt="">
+
+            <img src="./assets/icons/001-target.svg" alt="">
           </div>
           <h3>Visión</h3>
           <p>Ser la empresa modelo en ventas y rentas de vehículos más grande e innovadora del país, reconocida nacional
@@ -140,7 +151,7 @@
         </div>
         <div class="item valores">
           <div class="item__imgWrapper shadow">
-            
+
             <img src="./assets/icons/004-diamond.svg" alt="">
           </div>
           <h3>Valores Institucionales</h3>
@@ -193,7 +204,7 @@
       <div class="left">
         <h2>Suscríbete a nuestra lista de correos para nuevas actualizaciones</h2>
         <div class="barra"></div>
-        <form  class="input">
+        <form class="input">
           <input placeholder="Su correo electrónico..." type="text">
           <button>Suscribir</button>
         </form>

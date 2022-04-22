@@ -67,16 +67,25 @@ body {
         gap: 20px; } }
     .container header a img {
       color: #c6c6c6; }
+    .container header .dropdown li {
+      display: flex !important;
+      align-items: center !important; }
+      .container header .dropdown li a {
+        color: #000 !important; }
     .container header ul {
       z-index: 100 !important;
       gap: 30px !important; }
-      .container header ul li a {
-        font-size: 16px !important;
-        font-weight: 500; }
-        .container header ul li a:hover {
-          color: #b2092a; }
-      .container header ul li .current {
-        color: #b2092a !important; }
+      .container header ul li {
+        display: flex !important;
+        align-items: center !important; }
+        .container header ul li a {
+          font-size: 16px !important;
+          font-weight: 500;
+          color: #fff !important; }
+          .container header ul li a:hover {
+            color: #b2092a !important; }
+        .container header ul li .current {
+          color: #b2092a !important; }
     .container header .searchButton {
       height: 40px;
       width: 40px;
@@ -152,9 +161,11 @@ html {
     color: #fff; }
 
 .aboutUs {
-  gap: 20px;
-  margin-top: 50px; }
-  @media (max-width: 768px) {
+  gap: 20px; }
+  @media (max-width: 1400px) {
+    .aboutUs {
+      margin-top: 50px; } }
+  @media (max-width: 992px) {
     .aboutUs {
       flex-direction: column; }
       .aboutUs__left {
@@ -180,12 +191,15 @@ html {
     .aboutUs__left h1 {
       font-weight: 900;
       color: #2e2e2e;
-      font-size: 42px; }
+      font-size: 48px; }
+      @media (max-width: 1400px) {
+        .aboutUs__left h1 {
+          font-size: 42px; } }
       @media (max-width: 1200px) {
         .aboutUs__left h1 {
           width: 200%;
           font-size: 38px; } }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         .aboutUs__left h1 {
           width: 100%; } }
   .aboutUs__right {
@@ -194,20 +208,18 @@ html {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 40px; }
-    @media (max-width: 1200px) {
+    padding-top: 150px; }
+    @media (max-width: 1400px) {
       .aboutUs__right {
-        padding-top: 210px; }
+        padding-top: 45px; }
         .aboutUs__right img {
           width: 100% !important; } }
+    @media (max-width: 1200px) {
+      .aboutUs__right {
+        padding-top: 210px; } }
     @media (max-width: 992px) {
       .aboutUs__right {
-        padding-top: 90px; } }
-    @media (max-width: 768px) {
-      .aboutUs__right {
         padding-top: 0; } }
-    .aboutUs__right img {
-      width: 90%; }
 
 .barra {
   width: 120px;

@@ -88,15 +88,28 @@ body {
 				color: #c6c6c6;
 			}
 		}
+    .dropdown{
+      
+      li{
+        display: flex !important;
+        align-items: center !important;
+        a{
+          color: #000 !important;
+        }
+      }
+    }
 		ul {
 			z-index: 100 !important;
 			gap: 30px !important;
 			li {
+        display: flex !important;
+      align-items: center !important;
 				a {
 					font-size: 16px !important;
 					font-weight: 500;
+          color:#fff !important ;
           &:hover{
-            color: $red;
+            color: $red !important;
           }
 				}
 				.current {

@@ -28,8 +28,10 @@ html {
 .aboutUs {
 	@extend .center;
 	gap: 20px;
-	margin-top: 50px;
-	@media (max-width: 768px) {
+  @media (max-width: 1400px) {
+    margin-top: 50px;
+  }
+	@media (max-width: 992px) {
 		flex-direction: column;
 		&__left {
 			width: 100% !important;
@@ -60,12 +62,15 @@ html {
 		h1 {
 			font-weight: 900;
 			color: $dark;
-			font-size: 42px;
+			font-size: 48px;
+      @media (max-width: 1400px) {
+        font-size: 42px;
+      }
 			@media (max-width: 1200px) {
 				width: 200%;
 				font-size: 38px;
 			}
-			@media (max-width: 768px) {
+			@media (max-width: 992px) {
 				width: 100%;
 			}
 		}
@@ -76,21 +81,19 @@ html {
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
-		padding-top: 40px;
-		@media (max-width: 1200px) {
-			padding-top: 210px;
-			img {
+		padding-top: 150px;
+		@media (max-width: 1400px) {
+			padding-top: 45px;
+      img {
 				width: 100% !important;
 			}
 		}
+		@media (max-width: 1200px) {
+			padding-top: 210px;
+			
+		}
 		@media (max-width: 992px) {
-			padding-top: 90px;
-		}
-		@media (max-width: 768px) {
-			padding-top: 0;
-		}
-		img {
-			width: 90%;
+      padding-top: 0;
 		}
 	}
 }
