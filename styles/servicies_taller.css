@@ -144,7 +144,7 @@ html {
   background: #fff !important; }
 
 .main_container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/Enmascarar grupo 9.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/img/taller-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
