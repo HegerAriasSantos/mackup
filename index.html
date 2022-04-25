@@ -14,6 +14,8 @@
     rel="stylesheet">
   <title>Automare</title>
   <link rel="shortcut icon" href="./assets/icons/automare_favicon.png" type="image/x-icon">
+  <link href="./styles/aos.css" rel="stylesheet">
+  <script src="./js/aos.js"></script>
 
 </head>
 
@@ -61,17 +63,19 @@
   <div class="main_container">
     <div class="container" id="main">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-        <a href="./index.html">
+        <a data-aos="fade-down" data-aos-duration="1500" href="./index.html">
           <img src="./assets/img/Logo-Automare-Blanco.webp">
         </a>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="./index.html" class="nav-link px-2 link-light current">Inicio</a></li>
+        <ul data-aos="fade-down" data-aos-duration="1500"
+          class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a data-aos="fade-down" data-aos-duration="1500" href="./index.html"
+              class="nav-link px-2 link-light current">Inicio</a></li>
           <li><a href="./about.html" class="nav-link px-2 link-light ">Sobre nosotros</a></li>
           <li>
             <div class="dropdown text-e nd">
-              <a href="#" class="d-block link-dark   dropdown-toggle" id="dropdownUser1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-               Servicios
+              <a href="#" class="d-block link-dark   dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
               </a>
               <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                 <li><a class="dropdown-item" href="./servicies_taller.html">Taller</a></li>
@@ -85,9 +89,30 @@
         <div class="searchButton">
           <img src="./assets/icons/lupa.png">
         </div>
+
+        <div class="searchModal">
+          <a  href="./index.html">
+            <img src="./assets/img/Logo-Automare-Blanco.webp">
+          </a>
+
+          <div class="searchModal__container">
+            <div class="searchModal__container__close">
+              <div id="searchClose" class=" is-active hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+              </div>
+            </div>
+            <form class="input">
+              <input placeholder="Buscar..." type="text">
+              <button>Buscar</button>
+            </form>
+          </div>
+        </div>
+
         <div class="hamburger_menu">
 
-          <div class="hamburger">
+          <div  id="menu" class="hamburger ">
             <div class="_layer -top"></div>
             <div class="_layer -mid"></div>
             <div class="_layer -bottom"></div>
@@ -97,13 +122,14 @@
               <img src="./assets/img/Logo-Automare-Blanco.webp">
             </a>
             <ul>
-              <li><a href="./index.html" class="nav-link px-2 link-light current ">Inicio</a></li>
+              <li><a data-aos="fade-down" data-aos-duration="1500" href="./index.html"
+                  class="nav-link px-2 link-light current ">Inicio</a></li>
               <li><a href="./about.html" class="nav-link px-2 link-light ">Sobre nosotros</a></li>
               <li>
                 <div class="dropdown text-end">
-                  <a href="#" class=" d-block link-dark   dropdown-toggle" id="dropdownUser1"
-                    data-bs-toggle="dropdown" aria-expanded="false" >
-                   Servicios
+                  <a href="#" class=" d-block link-dark   dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicios
                   </a>
                   <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                     <li><a class="dropdown-item" href="./servicies_taller.html">Taller</a></li>
@@ -114,13 +140,14 @@
               <li><a href="#" class="nav-link px-2 link-light">Galería</a></li>
               <li><a href="#" class="nav-link px-2 link-light">Contacto</a></li>
             </ul>
-            <div class="searchButton">
+            <div data-aos="fade-up" data-aos-duration="1500" class="searchButton">
               <img src="./assets/icons/lupa.png">
             </div>
           </nav>
         </div>
       </header>
-      <div class="mainContent container  py-5">
+      <div data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine"
+        class="mainContent container  py-5">
         <div class="row col-lg-7">
           <p>Alquileres desde $50/día</p>
           <h1>Llévate lo mejor. <br>
@@ -132,7 +159,7 @@
     </div>
   </div>
 
-  <div
+  <div data-aos="fade-up" data-aos-duration="700"
     class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 rounded-3 selectVehicle shadow-lg">
     <div class=" bg-img col-lg-3 row-lg-12">
       <p>Encuentra <br> el vehículo que cumpla con tus expectativas aqui.</p>
@@ -183,11 +210,11 @@
 
   <div class=" vehicleSection container" id="vehicle">
     <div class="row">
-      <div class="vehicleSection__img 
+      <div data-aos="fade-down" data-aos-duration="1500" class="vehicleSection__img 
       col-lg-6">
         <img src="./assets/img/nissan.webp">
       </div>
-      <div class="col-lg-6 vehicleSection__description ">
+      <div data-aos="fade-up" data-aos-duration="1500" class="col-lg-6 vehicleSection__description ">
         <span>Sobre Nosotros</span>
         <h2>Desde 2013, entregando seguridad y compromiso.</h2>
         <div class="barra"></div>
@@ -201,7 +228,7 @@
           compromiso y responsabilidad que brindamos, además de los beneficios que ofrecemos para que la rentabilidad de
           sus proyectos se desarrolle al máximo.
         </p>
-        <figure >
+        <figure>
           <img src="./assets/img/medalla.png">
         </figure>
       </div>
@@ -210,22 +237,22 @@
 
   <div class="white">
     <div class="container cardsWithIcons">
-      <div class="cardsWithIcons__item shadow-lg ">
+      <div data-aos="fade-down" data-aos-duration="800" class="cardsWithIcons__item shadow-lg ">
         <img src="./assets/icons/cardRed.svg">
         <h3 id="vehiclesAvaliable">50+</h3>
         <p>Vehículos Disponible</p>
       </div>
-      <div class="cardsWithIcons__item shadow-lg ">
+      <div data-aos="fade-down" data-aos-duration="900" class="cardsWithIcons__item shadow-lg ">
         <img src="./assets/icons/cardRedWithtecho.svg">
         <h3 id="subsidiary">2+</h3>
         <p>Sucursales</p>
       </div>
-      <div class="cardsWithIcons__item shadow-lg ">
+      <div data-aos="fade-up" data-aos-duration="1000" class="cardsWithIcons__item shadow-lg ">
         <img src="./assets/icons/coupleCards.svg">
         <h3 id="rentedVehicles">2050+</h3>
         <p>Vehículos rentados</p>
       </div>
-      <div class="cardsWithIcons__item shadow-lg ">
+      <div data-aos="fade-up" data-aos-duration="1100" class="cardsWithIcons__item shadow-lg ">
         <img src="./assets/icons/hands.svg">
         <h3 id="clients">3252+</h3>
         <p>Clientes Satisfechos</p>
@@ -233,13 +260,13 @@
     </div>
 
 
-    <div class="vehiclesAvaliable container">
+    <div data-aos="fade-up" data-aos-duration="1100" class="vehiclesAvaliable container">
       <div class="vehiclesAvaliable__title">
         <span>Show Room</span>
         <h2>Algunos Modelos Disponibles</h2>
         <div class="barra"></div>
       </div>
-      <div class="vehiclesAvaliable__brands">
+      <div data-aos="fade-up" data-aos-duration="1300" class="vehiclesAvaliable__brands">
         <div class="wrapper">
 
           <div class="item actived">
@@ -268,8 +295,8 @@
         </div>
       </div>
 
-      <div class="vehiclesAvaliable__cards">
-        <div id="myCarousel" class="carousel slide"  data-interval="false">
+      <div data-aos="fade-up" data-aos-duration="1400" class="vehiclesAvaliable__cards">
+        <div id="myCarousel" class="carousel slide" data-interval="false">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
               aria-label="Slide 1"></button>
@@ -367,8 +394,6 @@
             </div>
             <div class="carousel-item">
               <div class="cards">
-
-
                 <div class="card">
                   <div class="card__img">
                     <img src="./assets/img/nissan.webp" class="card-img-top">
@@ -555,13 +580,14 @@
   <div class="creditsSection container">
     <div class="row">
       <div class="creditsSection__description col-lg-6">
-        <h2>Grandes en Vehículos... Grandes en Servicios</h2>
-        <p>Nos caracterizamos por ofrecer la renta de vehículos de motor y un amplio taller para el mantenimiento
+        <h2 data-aos="fade-down-right" data-aos-duration="1100">Grandes en Vehículos... Grandes en Servicios</h2>
+        <p data-aos="fade-down" data-aos-duration="1100"> Nos caracterizamos por ofrecer la renta de vehículos de motor
+          y un amplio taller para el mantenimiento
           preventivo y reparación de los mismos.
         </p>
         <div class="row">
 
-          <div class="col-lg-6">
+          <div data-aos="fade-down" data-aos-duration="1300" class="col-lg-6">
             <div class="item">
               <div class="check"><img src="./assets/icons/check.svg"></div>
               <p>Tecnología avanzada en reparación
@@ -578,7 +604,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div data-aos="fade-up" data-aos-duration="1300" class="col-lg-6">
             <div class="item">
               <div class="check"><img src="./assets/icons/check.svg"></div>
               <p>Show Room
@@ -597,7 +623,7 @@
           </div>
         </div>
       </div>
-      <div class="creditsSection__img 
+      <div data-aos="fade-up" data-aos-duration="1300" class="creditsSection__img 
       col-lg-6">
         <img src="./assets/img/kia.webp">
       </div>
@@ -605,35 +631,35 @@
   </div>
 
   <div class="creditsCompanies container">
-    <h3 class="creditsCompanies__title">Algunas entidades que confían en nuestro desempeño</h3>
+    <h3 data-aos="fade-down" data-aos-duration="1300" class="creditsCompanies__title">Algunas entidades que confían en
+      nuestro desempeño</h3>
     <div class="creditsCompanies__companies">
 
       <div class="column">
-        <div class="img">
+        <div data-aos="fade-down" data-aos-duration="1300" class="img">
           <img src="./assets/img/edenorte.png">
         </div>
-        <div class="img">
+        <div data-aos="fade-down" data-aos-duration="1300" class="img">
           <img src="./assets/img/elecnor.png">
         </div>
       </div>
       <div class="column">
 
-        <div class="img">
+        <div data-aos="fade-up" data-aos-duration="1300" class="img">
           <img src="./assets/img/emerald.png">
         </div>
-        <div class="img">
+        <div data-aos="fade-up" data-aos-duration="1300" class="img">
           <img src="./assets/img/esasolar.png">
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="footer bd-footer py-5 mt-5 ">
+  <footer data-aos="fade-up" data-aos-duration="2000" class="footer bd-footer py-5 mt-5 ">
     <div class="container ">
       <div class="row">
         <div class="col-lg-3 mb-3">
-          <a class="d-inline-flex align-items-center mb-2 link-dark  " href="/"
-            aria-label="Bootstrap">
+          <a class="d-inline-flex align-items-center mb-2 link-dark  " href="/" aria-label="Bootstrap">
             <img src="./assets/img/Logo-Automare-Blanco.webp" alt="logo">
           </a>
           <div class="footer__item">Nuestro compromiso es ser la empresa modelo en ventas y rentas de vehículos más
@@ -664,7 +690,7 @@
           <h5>Marcas</h5>
           <div class="barra"></div>
           <ul class="list-unstyled">
-             <li class="mb-2"><a href="#">Honda</a></li>
+            <li class="mb-2"><a href="#">Honda</a></li>
             <li class="mb-2"><a href="#">Kia</a></li>
             <li class="mb-2"><a href="#">Nissan</a></li>
             <li class="mb-2"><a href="#">Chevrolet</a></li>

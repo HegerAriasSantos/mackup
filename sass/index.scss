@@ -26,9 +26,13 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+    @media (max-width:574px) {
+      display: flex;
+      justify-content: center !important;
+    }
 		p {
       padding: 0;
-			margin: 0;
+			margin: 0; 
 			font-size: 16px;
 		}
 		h1 {

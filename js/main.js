@@ -1,5 +1,6 @@
 // selector
-var menu = document.querySelector(".hamburger");
+var menu = document.querySelector("#menu");
+var close = document.querySelector("#searchClose");
 // method
 function toggleMenu(event) {
 	this.classList.toggle("is-active");
@@ -8,7 +9,21 @@ function toggleMenu(event) {
 }
 
 // event
-menu.addEventListener("click", toggleMenu, false);
+if(menu){
+
+  menu.addEventListener("click", toggleMenu, false);
+}
+if(close){
+  close.addEventListener("click", () => {
+    document.querySelector(".searchModal").classList.remove("modal_active");
+  });
+}
+if(document.querySelector('.searchButton')){
+
+  document.querySelector('.searchButton').addEventListener('click', () => {
+  document.querySelector('.searchModal').classList.add('modal_active');
+})
+}
 
 // increment number
 
@@ -59,11 +74,13 @@ function isInViewport(el) {
 
 const box = document.querySelector("#subsidiary");
 let isFirst = true;
-document.addEventListener(
-	"scroll",
+if(box){
+
+  document.addEventListener(
+    "scroll",
 	function () {
 		if (isInViewport(box) && isFirst) {
-			incEltNbr(document.getElementById("vehiclesAvaliable"));
+      incEltNbr(document.getElementById("vehiclesAvaliable"));
 			incEltNbr(document.getElementById("subsidiary"));
 			incEltNbr(document.getElementById("rentedVehicles"));
 			incEltNbr(document.getElementById("clients"));
@@ -72,6 +89,17 @@ document.addEventListener(
 		}
 	},
 	{
-		passive: true,
+    passive: true,
 	},
-);
+  );
+}
+
+
+AOS.init();
+
+
+
+// Carousel
+
+const carouselItemContainer = document.querySelector(".carousel-inner");
+

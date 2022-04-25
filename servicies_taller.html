@@ -13,7 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <title>Automare - Servicio Taller</title>
-  <link rel="shortcut icon" href="./assets/icons/automare_favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="./assets/icons/automare_favicon.png" type="image/x-icon">
+<link href="./styles/aos.css" rel="stylesheet">
+<script src="./js/aos.js"></script>
 </head>
 
 <body>
@@ -60,11 +62,14 @@
   <div class="main_container">
     <div class="container" id="main">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-        <a href="./index.html">
+        <a data-aos="fade-down"
+        data-aos-duration="1500" href="./index.html">
           <img src="./assets/img/Logo-Automare-Blanco.webp">
         </a>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
+        <ul data-aos="fade-down"
+        data-aos-duration="1500" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a data-aos="fade-down"
+        data-aos-duration="1500" href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
           <li><a href="./about.html" class="nav-link px-2 link-light">Sobre nosotros</a></li>
           <li>
             <div class="dropdown text-end">
@@ -85,6 +90,26 @@
         <div class="searchButton">
           <img src="./assets/icons/lupa.png">
         </div>
+
+        <div class="searchModal">
+          <a  href="./index.html">
+            <img src="./assets/img/Logo-Automare-Blanco.webp">
+          </a>
+
+          <div class="searchModal__container">
+            <div class="searchModal__container__close">
+              <div id="searchClose" class=" is-active hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+              </div>
+            </div>
+            <form class="input">
+              <input placeholder="Buscar..." type="text">
+              <button>Buscar</button>
+            </form>
+          </div>
+        </div>
         <div class="hamburger_menu">
 
           <div class="hamburger">
@@ -97,7 +122,8 @@
               <img src="./assets/img/Logo-Automare-Blanco.webp">
             </a>
             <ul>
-              <li><a href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
+              <li><a data-aos="fade-down"
+        data-aos-duration="1500" href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
               <li><a href="./about.html" class="nav-link px-2 link-light ">Sobre nosotros</a></li>
               <li>
                 <div class="dropdown text-end">
@@ -114,14 +140,16 @@
               <li><a href="#" class="nav-link px-2 link-light">Galería</a></li>
               <li><a href="#" class="nav-link px-2 link-light">Contacto</a></li>
             </ul>
-            <div class="searchButton">
+            <div data-aos="fade-down"
+        data-aos-duration="1500" class="searchButton">
               <img src="./assets/icons/lupa.png">
             </div>
           </nav>
         </div>
       </header>
       <div class="mainContent container px-4 py-5">
-        <h2>Servicios / Taller</h2>
+        <h2 data-aos="fade-down"
+        data-aos-duration="1500">Servicios / Taller</h2>
       </div>
     </div>
   </div>
@@ -129,7 +157,8 @@
   <div class="container">
 
     <div class="aboutUs">
-      <div class="aboutUs__left">
+      <div data-aos="fade-down"
+      data-aos-duration="1500" class="aboutUs__left">
 
         <span>Servicios de Taller</span>
         <h1>Tecnología avanzada &
@@ -141,7 +170,8 @@
         </p>
         <span>Las características del taller son:</span>
 
-        <div class="features">
+        <div data-aos="fade-down"
+        data-aos-duration="2000" class="features">
           <div class="feature">
             <img src="./assets/icons/redCheck.svg">
             <p>Posee una tecnología avanzada para la reparación y mantenimiento de nuestras unidades.</p>
@@ -183,12 +213,15 @@
         </div>
 
       </div>
-      <div class="aboutUs__right">
+      <div data-aos="fade-down"
+      data-aos-duration="1500" class="aboutUs__right">
         <img src="./assets/img/motor.webp" alt="">
-        <div class="oil">
+        <div data-aos="fade-up"
+        data-aos-duration="2000" class="oil">
           <img src="./assets/img/car-oil-filters-motor-oil-can-isolated-white-copy.webp">
         </div>
-        <div class="tools">
+        <div data-aos="fade-up"
+        data-aos-duration="2000" class="tools">
           <div class="tools__imgWrapper">
             <img src="./assets/icons/tools.svg">
           </div>
@@ -200,26 +233,31 @@
     </div>
   </div>
 
-  <div class="creditsCompaniesWrapper">
+  <div data-aos="fade-up"
+  data-aos-duration="1500" class="creditsCompaniesWrapper">
 
     <div class="creditsCompanies container">
       <h3 class="creditsCompanies__title">Algunas entidades que confían en nuestro desempeño</h3>
       <div class="creditsCompanies__companies">
 
         <div class="column">
-          <div class="img">
+          <div data-aos="fade-down"
+          data-aos-duration="2200" class="img">
             <img src="./assets/img/edenorte.png">
           </div>
-          <div class="img">
+          <div data-aos="fade-down"
+          data-aos-duration="2200" class="img">
             <img src="./assets/img/elecnor.png">
           </div>
         </div>
         <div class="column">
 
-          <div class="img">
+          <div data-aos="fade-up"
+          data-aos-duration="2200" class="img">
             <img src="./assets/img/emerald.png">
           </div>
-          <div class="img">
+          <div data-aos="fade-down"
+          data-aos-duration="2200" class="img">
             <img src="./assets/img/esasolar.png">
           </div>
         </div>
@@ -227,7 +265,8 @@
     </div>
   </div>
 
-  <footer class="footer bd-footer py-5">
+  <footer data-aos="fade-up"
+  data-aos-duration="2000" class="footer bd-footer py-5">
     <div class="container ">
       <div class="row">
         <div class="col-lg-3 mb-3">
