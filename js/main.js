@@ -1,11 +1,11 @@
-$(".carousel").swipe({
+// selector
+var menu = document.querySelector('.hamburger');
+// method
+function toggleMenu (event) {
+  this.classList.toggle('is-active');
+  document.querySelector( ".menuppal" ).classList.toggle("is_active");
+  event.preventDefault();
+}
 
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
-
-  },
-  allowPageScroll:"vertical"
-
-});
+// event
+menu.addEventListener('click', toggleMenu, false);
