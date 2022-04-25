@@ -95,11 +95,24 @@ body {
 			}
 		}
 		.dropdown {
+      text-decoration: none;
+      a{
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline #b2092a 2px !important;
+        }
+      }
 			li {
 				display: flex !important;
 				align-items: center !important;
+        
 				a {
 					color: #000 !important;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline $red 2px !important;
+          }
+          
 				}
 			}
 		}
@@ -115,7 +128,7 @@ body {
 					font-weight: 500;
 					color: #fff !important ;
 					&:hover {
-						color: $red !important;
+            text-decoration: underline $red 2px;
 					}
 				}
 				.current {
