@@ -82,8 +82,9 @@ body {
 	color: #c6c6c6 !important;
 	header {
 		@media (max-width: 992px) {
-      display: flex;
-      justify-content: space-between;
+      display: flex !important;
+      justify-content: space-between !important;
+      padding: 0 1rem;
 		}
 		z-index: 100 !important;
 		background: transparent !important;
