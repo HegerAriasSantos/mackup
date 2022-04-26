@@ -196,7 +196,6 @@ html {
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-top: 50px !important;
 	gap: 50px;
 	&__title {
 		gap: 20px;
@@ -214,9 +213,14 @@ html {
 			font-size: 38px;
 			font-weight: 900;
 			color: #2e2e2e;
+
+      @media (max-width: 768px) {
+				font-size: 32px;
+			}
 			@media (max-width: 467px) {
 				font-size: 22px;
 			}
+     
 		}
 		.barra {
 			width: 120px;
@@ -228,7 +232,7 @@ html {
 	&__brands {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		width: 100%;
 		@media (max-width: 467px) {
@@ -283,8 +287,8 @@ html {
 		margin-bottom: 150px;
 		.carousel-indicators {
 			bottom: -75px;
-			display: flex;
-			align-items: center;
+      display: flex;
+      align-items: center;
 			button {
 				background-color: #cecece;
 				border: none;
@@ -300,9 +304,9 @@ html {
 			}
 		}
 	}
-	.carousel-inner {
-		overflow: visible !important;
-	}
+  .carousel-inner{
+    overflow: visible !important;
+  }
 	.carousel-item {
 		cursor: default !important;
 		&:hover {
@@ -334,11 +338,11 @@ html {
 			.card {
 				border-radius: 20px;
 				padding: 15px;
-				transition: 0.5s;
-				border: none !important;
-				&:hover {
-					box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-				}
+        transition: 0.5s;
+        border: none !important;
+        &:hover{
+          box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        }
 				&__img {
 					background-color: #f2f2f2;
 					overflow: hidden !important;
@@ -387,6 +391,7 @@ html {
 				}
 				&__features {
 					display: flex;
+          align-items: center;
 					gap: 10px;
 					.icon {
 						display: flex;

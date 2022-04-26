@@ -91,7 +91,7 @@
         </div>
 
         <div class="searchModal">
-          <a  href="./index.html">
+          <a href="./index.html">
             <img src="./assets/img/Logo-Automare-Blanco.webp">
           </a>
 
@@ -112,7 +112,7 @@
 
         <div class="hamburger_menu">
 
-          <div  id="menu" class="hamburger ">
+          <div id="menu" class="hamburger ">
             <div class="_layer -top"></div>
             <div class="_layer -mid"></div>
             <div class="_layer -bottom"></div>
@@ -121,6 +121,10 @@
             <a href="/">
               <img src="./assets/img/Logo-Automare-Blanco.webp">
             </a>
+            <form class="input">
+              <input placeholder="Buscar..." type="text">
+              <button>Buscar</button>
+            </form>
             <ul>
               <li><a data-aos="fade-down" data-aos-duration="1500" href="./index.html"
                   class="nav-link px-2 link-light current ">Inicio</a></li>
@@ -140,9 +144,7 @@
               <li><a href="#" class="nav-link px-2 link-light">Galería</a></li>
               <li><a href="#" class="nav-link px-2 link-light">Contacto</a></li>
             </ul>
-            <div data-aos="fade-up" data-aos-duration="1500" class="searchButton">
-              <img src="./assets/icons/lupa.png">
-            </div>
+            
           </nav>
         </div>
       </header>
@@ -158,504 +160,510 @@
       </div>
     </div>
   </div>
-
-  <div data-aos="fade-up" data-aos-duration="700"
-    class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 rounded-3 selectVehicle shadow-lg">
-    <div class=" bg-img col-lg-3 row-lg-12">
-      <p>Encuentra <br> el vehículo que cumpla con tus expectativas aqui.</p>
-    </div>
-    <div class="form-content row col-lg-9">
-      <div class="row col-lg-6">
-        <input class="form-control" type="text" placeholder="Zona de recogida" aria-label="Zona de recogida">
-        <input class="form-control" type="text" placeholder="Zona de retorno" aria-label="default input example">
-        <div class="selects">
-          <select class="form-select" aria-label="Residencia: USA" placeholder="Residencia: USA"
-            aria-placeholder="Residencia: USA">
-            <option selected>Residencia: USA</option>
-            <option value="1">Residencia: RD</option>
-          </select>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Edad: 25+</option>
-            <option value="1">Edad: 40+</option>
-          </select>
+  <div class="gray">
+    <div data-aos="fade-up" data-aos-duration="700"
+      class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 rounded-3 selectVehicle shadow-lg">
+      <div class=" bg-img col-lg-3 row-lg-12">
+        <p>Encuentra <br> el vehículo que cumpla con tus expectativas aqui.</p>
+      </div>
+      <div class="form-content row col-lg-9">
+        <div class="row col-lg-6">
+          <input class="form-control" type="text" placeholder="Zona de recogida" aria-label="Zona de recogida">
+          <input class="form-control" type="text" placeholder="Zona de retorno" aria-label="default input example">
+          <div class="selects">
+            <select class="form-select" aria-label="Residencia: USA" placeholder="Residencia: USA"
+              aria-placeholder="Residencia: USA">
+              <option selected>Residencia: USA</option>
+              <option value="1">Residencia: RD</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Edad: 25+</option>
+              <option value="1">Edad: 40+</option>
+            </select>
+          </div>
+        </div>
+        <div class="main_content_row2 row col-lg-6">
+          <div class="dataTime col-lg-7">
+            <input class="form-control" placeholder="Fecha de salida" />
+            <img src="./assets/icons/time.svg">
+          </div>
+          <div class="col-lg-5">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Edad: 25+</option>
+              <option value="1">Edad: 40+</option>
+            </select>
+          </div>
+          <div class=" dataTime col-lg-7">
+            <input class="form-control" placeholder="Fecha de salida" />
+            <img src="./assets/icons/time.svg">
+          </div>
+          <div class="col-lg-5">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Edad: 25+</option>
+              <option value="1">Edad: 40+</option>
+            </select>
+          </div>
+          <div class="buttonWrapper">
+            <button>Selecciona Vehículo</button>
+          </div>
         </div>
       </div>
-      <div class="main_content_row2 row col-lg-6">
-        <div class="dataTime col-lg-7">
-          <input class="form-control" placeholder="Fecha de salida" />
-          <img src="./assets/icons/time.svg">
-        </div>
-        <div class="col-lg-5">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Edad: 25+</option>
-            <option value="1">Edad: 40+</option>
-          </select>
-        </div>
-        <div class=" dataTime col-lg-7">
-          <input class="form-control" placeholder="Fecha de salida" />
-          <img src="./assets/icons/time.svg">
-        </div>
-        <div class="col-lg-5">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Edad: 25+</option>
-            <option value="1">Edad: 40+</option>
-          </select>
-        </div>
-        <div class="buttonWrapper">
-          <button>Selecciona Vehículo</button>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class=" vehicleSection container" id="vehicle">
-    <div class="row">
-      <div data-aos="fade-down" data-aos-duration="1500" class="vehicleSection__img 
+    <div class=" vehicleSection container" id="vehicle">
+      <div class="row">
+        <div data-aos="fade-down" data-aos-duration="1500" class="vehicleSection__img 
       col-lg-6">
-        <img src="./assets/img/nissan.webp">
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1500" class="col-lg-6 vehicleSection__description ">
-        <span>Sobre Nosotros</span>
-        <h2>Desde 2013, entregando seguridad y compromiso.</h2>
-        <div class="barra"></div>
-        <p>A pesar de ser una empresa muy joven, en AUTOMARE, SRL, apostamos al emprendimiento mejorando nuestros
-          servicios, implementando política de calidad y esforzándonos por lograr todos nuestros objetivos. Todos
-          nuestros empleados, accionistas, clientes y personas relacionadas, sienten gran orgullo por la excelencia en
-          nuestras operaciones.
-          <br>
-          <br>
-          Empresas nacionales e internacionales, requieren de nuestros servicios gracias a la seguridad, disponibilidad,
-          compromiso y responsabilidad que brindamos, además de los beneficios que ofrecemos para que la rentabilidad de
-          sus proyectos se desarrolle al máximo.
-        </p>
-        <figure>
-          <img src="./assets/img/medalla.png">
-        </figure>
+          <img src="./assets/img/nissan.png">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-lg-6 vehicleSection__description ">
+          <span>Sobre Nosotros</span>
+          <h2>Desde 2013, entregando seguridad y compromiso.</h2>
+          <div class="barra"></div>
+          <p>A pesar de ser una empresa muy joven, en AUTOMARE, SRL, apostamos al emprendimiento mejorando nuestros
+            servicios, implementando política de calidad y esforzándonos por lograr todos nuestros objetivos. Todos
+            nuestros empleados, accionistas, clientes y personas relacionadas, sienten gran orgullo por la excelencia en
+            nuestras operaciones.
+            <br>
+            <br>
+            Empresas nacionales e internacionales, requieren de nuestros servicios gracias a la seguridad,
+            disponibilidad,
+            compromiso y responsabilidad que brindamos, además de los beneficios que ofrecemos para que la rentabilidad
+            de
+            sus proyectos se desarrolle al máximo.
+          </p>
+          <figure>
+            <img src="./assets/img/medalla.png">
+          </figure>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="white">
-    <div class="container cardsWithIcons">
-      <div data-aos="fade-down" data-aos-duration="800" class="cardsWithIcons__item shadow-lg ">
-        <img src="./assets/icons/cardRed.svg">
-        <h3 id="vehiclesAvaliable">50+</h3>
-        <p>Vehículos Disponible</p>
-      </div>
-      <div data-aos="fade-down" data-aos-duration="900" class="cardsWithIcons__item shadow-lg ">
-        <img src="./assets/icons/cardRedWithtecho.svg">
-        <h3 id="subsidiary">2+</h3>
-        <p>Sucursales</p>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1000" class="cardsWithIcons__item shadow-lg ">
-        <img src="./assets/icons/coupleCards.svg">
-        <h3 id="rentedVehicles">2050+</h3>
-        <p>Vehículos rentados</p>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1100" class="cardsWithIcons__item shadow-lg ">
-        <img src="./assets/icons/hands.svg">
-        <h3 id="clients">3252+</h3>
-        <p>Clientes Satisfechos</p>
-      </div>
+  <div class="container cardsWithIcons">
+    <div data-aos="fade-down" data-aos-duration="800" class="cardsWithIcons__item shadow-lg ">
+      <img src="./assets/icons/cardRed.svg">
+      <h3 id="vehiclesAvaliable">50+</h3>
+      <p>Vehículos Disponible</p>
     </div>
-
-
-    <div data-aos="fade-up" data-aos-duration="1100" class="vehiclesAvaliable container">
-      <div class="vehiclesAvaliable__title">
-        <span>Show Room</span>
-        <h2>Algunos Modelos Disponibles</h2>
-        <div class="barra"></div>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1300" class="vehiclesAvaliable__brands">
-        <div class="wrapper">
-
-          <div class="item actived">
-            <img src="./assets/icons/honda.svg">
-            <p>honda</p>
-          </div>
-          <div class="item">
-            <img src="./assets/icons/nissan.svg">
-            <p>Nissan</p>
-          </div>
-        </div>
-
-        <div class="wrapper">
-          <div class="item">
-            <img src="./assets/icons/kn.svg">
-            <p>Kia</p>
-          </div>
-          <div class="item">
-            <img src="./assets/icons/chevrolet.svg">
-            <p>Chevrolet</p>
-          </div>
-        </div>
-
-        <div class="lastOne">
-          <p>Galería Completa</p>
-        </div>
-      </div>
-
-      <div data-aos="fade-up" data-aos-duration="1400" class="vehiclesAvaliable__cards">
-        <div id="myCarousel" class="carousel slide" data-interval="false">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards">
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards">
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards">
-
-
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img src="./assets/img/nissan.webp" class="card-img-top">
-                  </div>
-                  <div class="card__title">
-                    <h5>Nissan Frontier NP 300</h5>
-                    <p>Año 2020</p>
-                  </div>
-                  <div class="card__price">
-                    <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
-                  </div>
-                  <hr>
-                  <div class="card__features">
-                    <div class="icon">
-                      <img src="./assets/icons/gasolina.svg">
-                      <p>Gasoil</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/volante.svg">
-                      <p>Mecánico</p>
-                    </div>
-                    <div class="icon">
-                      <img src="./assets/icons/carWithPeople.svg">
-                      <p>5 pasajeros</p>
-                    </div>
-                  </div>
-                  <button>Reservar Ahora</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <div data-aos="fade-down" data-aos-duration="900" class="cardsWithIcons__item shadow-lg ">
+      <img src="./assets/icons/cardRedWithtecho.svg">
+      <h3 id="subsidiary">2+</h3>
+      <p>Sucursales</p>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="cardsWithIcons__item shadow-lg ">
+      <img src="./assets/icons/coupleCards.svg">
+      <h3 id="rentedVehicles">2050+</h3>
+      <p>Vehículos rentados</p>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1100" class="cardsWithIcons__item shadow-lg ">
+      <img src="./assets/icons/hands.svg">
+      <h3 id="clients">3252+</h3>
+      <p>Clientes Satisfechos</p>
     </div>
   </div>
 
-  <div class="creditsSection container">
-    <div class="row">
-      <div class="creditsSection__description col-lg-6">
-        <h2 data-aos="fade-down-right" data-aos-duration="1100">Grandes en Vehículos... Grandes en Servicios</h2>
-        <p data-aos="fade-down" data-aos-duration="1100"> Nos caracterizamos por ofrecer la renta de vehículos de motor
-          y un amplio taller para el mantenimiento
-          preventivo y reparación de los mismos.
-        </p>
-        <div class="row">
 
-          <div data-aos="fade-down" data-aos-duration="1300" class="col-lg-6">
-            <div class="item">
-              <div class="check"><img src="./assets/icons/check.svg"></div>
-              <p>Tecnología avanzada en reparación
-              </p>
-            </div>
-            <div class="item">
-              <div class="check"><img src="./assets/icons/check.svg"></div>
-              <p>Pista de prueba de manejo
-              </p>
-            </div>
-            <div class="item">
-              <div class="check"><img src="./assets/icons/check.svg"></div>
-              <p>Precios inigualables
-              </p>
+  <div data-aos="fade-up" data-aos-duration="1100" class="vehiclesAvaliable container">
+    <div class="vehiclesAvaliable__title">
+      <span>Show Room</span>
+      <h2>Algunos Modelos Disponibles</h2>
+      <div class="barra"></div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1300" class="vehiclesAvaliable__brands">
+      <div class="wrapper">
+
+        <div class="item actived">
+          <img src="./assets/icons/honda.svg">
+          <p>honda</p>
+        </div>
+        <div class="item">
+          <img src="./assets/icons/nissan.svg">
+          <p>Nissan</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="item">
+          <img src="./assets/icons/kn.svg">
+          <p>Kia</p>
+        </div>
+        <div class="item">
+          <img src="./assets/icons/chevrolet.svg">
+          <p>Chevrolet</p>
+        </div>
+      </div>
+
+      <div class="lastOne">
+        <p>Galería Completa</p>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="1400" class="vehiclesAvaliable__cards">
+      <div id="myCarousel" class="carousel slide" data-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1300" class="col-lg-6">
-            <div class="item">
-              <div class="check"><img src="./assets/icons/check.svg"></div>
-              <p>Show Room
-              </p>
+          <div class="carousel-item">
+            <div class="cards">
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
             </div>
-            <div class="item">
-              <div class="check"><img src="./assets/icons/check.svg"></div>
-              <p>Amplia flotilla de vehículos
-              </p>
-            </div>
-            <div class="item">
-              <div class="check"><img src="./assets/icons/check.svg"></div>
-              <p>Vehículos modernos
-              </p>
+          </div>
+          <div class="carousel-item">
+            <div class="cards">
+
+
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./assets/img/nissan.webp" class="card-img-top">
+                </div>
+                <div class="card__title">
+                  <h5>Nissan Frontier NP 300</h5>
+                  <p>Año 2020</p>
+                </div>
+                <div class="card__price">
+                  <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+                </div>
+                <hr>
+                <div class="card__features">
+                  <div class="icon">
+                    <img src="./assets/icons/gasolina.svg">
+                    <p>Gasoil</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/volante.svg">
+                    <p>Mecánico</p>
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icons/carWithPeople.svg">
+                    <p>5 pasajeros</p>
+                  </div>
+                </div>
+                <button>Reservar Ahora</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1300" class="creditsSection__img 
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="grayWrapper">
+    <div class="creditsSection container">
+      <div class="row">
+        <div class="creditsSection__description col-lg-6">
+          <h2 data-aos="fade-down-right" data-aos-duration="1100">Grandes en Vehículos... Grandes en Servicios</h2>
+          <p data-aos="fade-down" data-aos-duration="1100"> Nos caracterizamos por ofrecer la renta de vehículos de
+            motor
+            y un amplio taller para el mantenimiento
+            preventivo y reparación de los mismos.
+          </p>
+          <div class="row">
+
+            <div data-aos="fade-down" data-aos-duration="1300" class="col-lg-6">
+              <div class="item">
+                <div class="check"><img src="./assets/icons/check.svg"></div>
+                <p>Tecnología avanzada en reparación
+                </p>
+              </div>
+              <div class="item">
+                <div class="check"><img src="./assets/icons/check.svg"></div>
+                <p>Pista de prueba de manejo
+                </p>
+              </div>
+              <div class="item">
+                <div class="check"><img src="./assets/icons/check.svg"></div>
+                <p>Precios inigualables
+                </p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1300" class="col-lg-6">
+              <div class="item">
+                <div class="check"><img src="./assets/icons/check.svg"></div>
+                <p>Show Room
+                </p>
+              </div>
+              <div class="item">
+                <div class="check"><img src="./assets/icons/check.svg"></div>
+                <p>Amplia flotilla de vehículos
+                </p>
+              </div>
+              <div class="item">
+                <div class="check"><img src="./assets/icons/check.svg"></div>
+                <p>Vehículos modernos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1300" class="creditsSection__img 
       col-lg-6">
-        <img src="./assets/img/kia.webp">
+          <img src="./assets/img/kia.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="creditsCompanies container">
+      <h3 data-aos="fade-down" data-aos-duration="1300" class="creditsCompanies__title">Algunas entidades que confían en
+        nuestro desempeño</h3>
+      <div class="creditsCompanies__companies">
+
+        <div class="column">
+          <div data-aos="fade-down" data-aos-duration="1300" class="img">
+            <img src="./assets/img/edenorte.png">
+          </div>
+          <div data-aos="fade-down" data-aos-duration="1300" class="img">
+            <img src="./assets/img/elecnor.png">
+          </div>
+        </div>
+        <div class="column">
+
+          <div data-aos="fade-up" data-aos-duration="1300" class="img">
+            <img src="./assets/img/emerald.png">
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1300" class="img">
+            <img src="./assets/img/esasolar.png">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="creditsCompanies container">
-    <h3 data-aos="fade-down" data-aos-duration="1300" class="creditsCompanies__title">Algunas entidades que confían en
-      nuestro desempeño</h3>
-    <div class="creditsCompanies__companies">
-
-      <div class="column">
-        <div data-aos="fade-down" data-aos-duration="1300" class="img">
-          <img src="./assets/img/edenorte.png">
-        </div>
-        <div data-aos="fade-down" data-aos-duration="1300" class="img">
-          <img src="./assets/img/elecnor.png">
-        </div>
-      </div>
-      <div class="column">
-
-        <div data-aos="fade-up" data-aos-duration="1300" class="img">
-          <img src="./assets/img/emerald.png">
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1300" class="img">
-          <img src="./assets/img/esasolar.png">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer data-aos="fade-up" data-aos-duration="2000" class="footer bd-footer py-5 mt-5 ">
+  <footer data-aos="fade-up" data-aos-duration="2000" class="footer bd-footer py-5 ">
     <div class="container ">
       <div class="row">
         <div class="col-lg-3 mb-3">
@@ -742,7 +750,6 @@
     </div>
   </footer>
 
-  </div>
   <script src="./js/boostraps.js"></script>
   <script src="./js/main.js"></script>
 </body>

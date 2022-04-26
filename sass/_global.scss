@@ -8,61 +8,59 @@ body {
 	background: #f2f2f2 !important;
 	margin: 0;
 	padding: 0;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
-.modal_active{
-  display: flex !important;
-  z-index: 1000000 !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;  
-  
+.modal_active {
+	display: flex !important;
+	z-index: 1000000 !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
-.searchModal{
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 50px;
-  position: fixed;
+.searchModal {
+	display: none;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 50px;
+	position: fixed;
+	background-color: #2e2e2e;
 
-  background-color: #2e2e2e;
-
-  &__container{
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    width: 350px;
-    .hamburger{
-      display: block !important;
-    }
-    .input{
-      width: 100%;
-      height: 40px;
-      border-radius: 10px;
-      border: none;
-      overflow: hidden;
-      input{
-        padding: 0 20px;
-        width: 70%;
-        height: 100%;
-        margin: 0 !important;
-        border: none;
-        outline: none;
-      }
-      button{
-        height: 100%;
-        width: 30%;
-        margin: 0;
-        margin-left: -6px;
-        border: none;
-        padding: 0;
-        background:$red;
-        color:#fff;
-      }
-    }
-  }
+	&__container {
+		display: flex;
+		align-items: center;
+		margin-top: 50px;
+		width: 350px;
+		.hamburger {
+			display: block !important;
+		}
+	}
+}
+.input {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	overflow: hidden;
+	input {
+		padding: 0 20px;
+		width: 70%;
+		height: 100%;
+		margin: 0 !important;
+		border: none;
+		outline: none;
+	}
+	button {
+		height: 100%;
+		width: 30%;
+		margin: 0;
+		margin-left: -6px;
+		border: none;
+		padding: 0;
+		background: $red;
+		color: #fff;
+	}
 }
 .center {
 	display: flex;
@@ -82,63 +80,72 @@ body {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		color: $gray !important;
+
 		&__contact {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			min-height: 40px;
 			gap: 90px;
-			@media (max-width: 992px) {
-				gap: 0px;
-				flex-direction: column;
-				align-items: flex-start;
-
-				p {
-					margin: 0;
+			&:nth-child(2) {
+				@media (max-width: 992px) {
+					width: 30%;
 				}
+			}
+			@media (max-width: 992px) {
+				justify-content: space-around;
+				align-items: center;
+			}
+			@media (max-width: 768px) {
+				gap: 15px;
 			}
 		}
 		.item {
 			display: flex;
 			align-items: center;
 			gap: 10px;
+			@media (max-width: 768px) {
+				p {
+					font-size: 12px;
+				}
+			}
+		}
+		.contactHeader__social {
 			@media (max-width: 992px) {
-				margin-bottom: 20px;
-			}
-		}
-	}
-	.contactHeader__social {
-		display: flex;
-		gap: 20px;
-
-		img {
-			width: 15px;
-			height: 15px;
-			&:hover {
-				cursor: pointer;
-				transform: scale(1.2);
-				transition: 0.2s;
-			}
-		}
-		@media (max-width: 575px) {
-			img {
-				width: 20px;
-				height: 20px;
+				display: none;
 			}
 		}
 	}
 }
+.contactHeader__social {
+	display: flex ;
+	gap: 20px;
 
-
+	img {
+		width: 15px;
+		height: 15px;
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.2);
+			transition: 0.2s;
+		}
+	}
+	@media (max-width: 575px) {
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
 
 .container {
 	z-index: 100 !important;
 	color: #c6c6c6 !important;
 	header {
 		@media (max-width: 992px) {
-      display: flex !important;
-      justify-content: space-between !important;
-      padding: 0 1rem;
+			display: flex !important;
+			justify-content: space-between !important;
+			padding: 0 1rem;
 		}
 		z-index: 100 !important;
 		background: transparent !important;
@@ -149,29 +156,27 @@ body {
 			}
 		}
 		.dropdown {
-      text-decoration: none;
-      a{
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline #b2092a 2px !important;
-        }
-      }
+			text-decoration: none;
+			a {
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline $red 4px;
+				}
+			}
 			li {
 				display: flex !important;
 				align-items: center !important;
-        
+
 				a {
 					color: #000 !important;
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline $red 2px !important;
-          }
-          
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline $red 4px;
+					}
 				}
 			}
 		}
 		ul {
-      
 			z-index: 100 !important;
 			gap: 50px !important;
 			li {
@@ -182,16 +187,16 @@ body {
 					font-weight: 500;
 					color: #fff !important ;
 					&:hover {
-            text-decoration: underline $red 2px;
+						text-decoration: underline $red 4px;
 					}
 				}
 				.current {
-					text-decoration: underline $red 2px;
+					text-decoration: underline $red 4px;
 				}
 			}
-      @media (max-width: 992px) {
-        display: none;
-      }
+			@media (max-width: 992px) {
+				display: none;
+			}
 		}
 		.searchButton {
 			height: 40px;
@@ -206,14 +211,14 @@ body {
 				height: 18px;
 				width: 18px;
 			}
-      @media (max-width: 992px) {
-        display: none;
-      }
+			@media (max-width: 992px) {
+				display: none;
+			}
 		}
 	}
 }
 .hamburger {
-  display: none;
+	display: none;
 	height: 30px;
 	width: 30px;
 	padding: 20px 20px;
@@ -228,9 +233,9 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-  @media (max-width: 992px) {
-    display: block;
-  }
+	@media (max-width: 992px) {
+		display: block;
+	}
 }
 .hamburger.is-active {
 	position: fixed;
@@ -288,19 +293,21 @@ body {
 	transform: translate3d(0px, -100%, 0px);
 	transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
 	z-index: 1001;
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 40px;
-
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+	form {
+		width: 70% !important;
+	}
 }
 .menuppal > ul {
 	margin: 0;
 	padding: 0;
-  @media (max-width: 992px) {
-    display: block !important;
-  }
+	@media (max-width: 992px) {
+		display: block !important;
+	}
 }
 .menuppal ul li {
 	list-style: none;
@@ -315,7 +322,7 @@ body {
 	font-weight: bold;
 }
 .menuppal ul li a {
-  padding: 0 !important;
+	padding: 0 !important;
 	text-decoration: none;
 	color: #369;
 }
@@ -348,8 +355,8 @@ body {
 	}
 	.barra {
 		width: 80%;
-		border-radius: 10px;
-		border-bottom: 5px solid $red;
+		text-decoration: underline $red 4px;
+
 		margin: 10px 0;
 	}
 	li {
