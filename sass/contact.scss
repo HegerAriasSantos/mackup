@@ -1,5 +1,9 @@
 @import "./global";
 
+body,
+html {
+	background: #fff !important;
+}
 .main_container {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url("../assets/img/contact-background.jpg");
@@ -7,10 +11,10 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 330px;
-  height: auto;
+	height: auto;
 }
-.container{
-  margin-top: 0 !important;
+.container {
+	margin-top: 0 !important;
 }
 .mainContent {
 	@extend .center;
@@ -20,4 +24,84 @@
 		font-size: 2.5rem;
 		color: #fff;
 	}
+}
+
+.formContact {
+	margin-top: 50px !important;
+  margin-bottom: 50px !important;
+	span {
+		font-weight: 900;
+		color: $red;
+	}
+	input,
+	textarea {
+		border: 2px #c2c2c2 solid;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 10px;
+	}
+  textarea{
+    resize: none;
+  }
+	input {
+		width: 98%;
+	}
+	button {
+		border-radius: 8px;
+		padding: 10px 30px;
+		border: none;
+		background-color: $red;
+		cursor: pointer;
+		color: #fff;
+	}
+	.enviar {
+		font-weight: 700;
+		width: 250px;
+	}
+  .right{
+    margin-left: -25px;
+    color: #080808;
+    h2{
+      font-size: 42px;
+      font-weight: 900;
+      margin: 20px 0;
+    }
+    p{
+      color: #2E2E2E;
+    }
+    .barra{
+      width: 70px;
+      border-bottom: 5px solid $red;
+      border-radius: 10px;
+      margin: 30px 0;
+    }
+    .btnsWrapper{
+      display: flex;
+      justify-content: space-between;
+      .email{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+        button{
+          width: 100%;
+        }
+      }
+    }
+    .socialMedias{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .social{
+        display: flex;
+        gap: 30px;
+        img{
+          filter: invert(100%);
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
 }
