@@ -26,21 +26,19 @@ body {
 	padding-top: 50px;
 	position: fixed;
 	background-color: #2e2e2e;
-
 	&__container {
 		display: flex;
 		align-items: center;
 		margin-top: 50px;
-		width: 350px;
 		.hamburger {
 			display: block !important;
 		}
 	}
 }
 .input {
-	width: 100%;
-	height: 40px;
-	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	border-radius: 20px;
 	border: none;
 	overflow: hidden;
 	input {
@@ -404,21 +402,22 @@ body {
       width: 100px;
       border-bottom: 5px solid $red;
       border-radius: 10px;
+      margin-bottom: 30px;
     }
   }
 	&__companies {
 		display: flex;
-		justify-content: space-between;
+    justify-content: space-between;
 		align-items: center;
 		@media (max-width: 533px) {
-			flex-direction: column;
+      flex-direction: column;
 			gap: 50px;
 		}
 		.column {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			align-items: center;
-			width: 45%;
+			width: 50%;
 			transition: 1.2s;
 
 			@media (max-width: 992px) {
@@ -685,15 +684,16 @@ body {
 	bottom:40px;
 	right:20px;
 	background-color:#25d366;
-	color:#FFF;
+	color: #fff ;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
-	box-shadow: 2px 2px 3px #999;
   z-index:100;
-  cursor:pointer;
+  transform: 5s;
   &:hover{
-    color: #fff;
+    color: $red !important;
+    text-decoration: none;
+
   }
 }
 
