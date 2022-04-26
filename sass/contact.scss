@@ -1,0 +1,23 @@
+@import "./global";
+
+.main_container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("../assets/img/contact-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 330px;
+  height: auto;
+}
+.container{
+  margin-top: 0 !important;
+}
+.mainContent {
+	@extend .center;
+	padding: 50px 0;
+	h2 {
+		font-weight: 900;
+		font-size: 2.5rem;
+		color: #fff;
+	}
+}
