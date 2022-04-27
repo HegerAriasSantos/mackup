@@ -136,6 +136,11 @@ html {
           filter: invert(100%);
           width: 20px;
           height: 20px;
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: 0.2s;
+          }
         }
       }
     }

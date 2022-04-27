@@ -135,8 +135,9 @@
               <button>Buscar</button>
             </form>
             <ul>
-              <li><a href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
-              <li><a href="./about.html" class="nav-link px-2 link-light current ">Sobre nosotros</a></li>
+              <li><a data-aos="fade-down" data-aos-duration="1500" href="./index.html"
+                  class="nav-link px-2 link-light  ">Inicio</a></li>
+              <li><a href="./about.html" class="nav-link px-2 link-light ">Sobre nosotros</a></li>
               <li>
                 <div class="dropdown text-end">
                   <a href="#" class=" d-block link-dark   dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown"
@@ -150,12 +151,55 @@
                 </div>
               </li>
               <li><a href="#" class="nav-link px-2 link-light">Galería</a></li>
-              <li><a href="./contact.html" class="nav-link px-2 link-light">Contacto</a></li>
+              <li><a href="./contact.html" class="nav-link px-2 link-light current">Contacto</a></li>
 
             </ul>
-            <div data-aos="fade-up" data-aos-duration="1500" class="searchButton">
-              <img src="./assets/icons/lupa.png">
+            <div class="navBlack">
+              <div class="container contactHeader">
+                <div class="contactHeader__contact">
+                  <div class="item">
+                    <div class="item__icon">
+                      <img src="./assets/icons/ubicacion.svg" alt="ubicacion">
+                    </div>
+                    <div class="item__text">
+                      <p>Aut. Duarte KM 3 1/2, Pontón, La Vega, Rep. Dom. </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item__icon">
+                      <img src="./assets/icons/relog.svg" alt="relog">
+                    </div>
+                    <div class="item__text">
+                      <p>Lunes a Sabados 9:00am - 6:00pm</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="register">
+                    <a href="#">Regístrate</a>
+                  </div>
+                  <div class="contactHeader__social">
+                    <div class="item">
+                      <div class="item__icon">
+                        <img src="./assets/icons/facebook.svg" alt="facebook">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__icon">
+                        <img src="./assets/icons/twitter.svg" alt="twitter">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__icon">
+                        <img src="./assets/icons/instagram.svg" alt="instagram">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
+
           </nav>
         </div>
       </header>
@@ -219,7 +263,7 @@
           <div class="email">
             <span>Llámanos</span>
             <a href="tel:8095739898">
-              <button class="form_btn">809-573-9898</button>
+              <button class="form_btn"> <i class="fa fa-whatsapp"></i> 809-573-9898</button>
             </a>
           </div>
         </div>

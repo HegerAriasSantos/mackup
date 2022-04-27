@@ -30,6 +30,9 @@ body {
 		display: flex;
 		align-items: center;
 		margin-top: 50px;
+    .input{
+      width: 500px !important;
+    }
 		.hamburger {
 			display: block !important;
 		}
@@ -97,7 +100,7 @@ body {
           border: none;
           border-radius: 0  0 15px 15px;
           padding: 15px 20px 10px 20px;
-          font-size: 18px;
+          font-size: 15px;
           border-bottom: 15px solid $red;
           font-weight: 700;
           text-decoration: none;
@@ -341,13 +344,17 @@ body {
       display: flex !important;
       justify-content: center !important;
       width: 100% !important;
-      margin-top: 30px !important;
+      margin-top: 20px !important;
       gap: 17px !important;
     }
     &__contact{
       width: 100% !important;
-      gap: 10px  !important;
+      gap: 30px  !important;
       justify-content: center !important;
+      flex-direction: column !important;
+      .item{
+        width: 100% !important;
+      }
     }
   }
 }
