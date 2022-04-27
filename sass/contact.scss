@@ -70,6 +70,10 @@ html {
 	.enviar {
 		font-weight: 700;
 		width: 250px;
+    margin-left: 10px;
+    @media (max-width:992px) {
+      margin-left: 0;
+    }
 	}
   .left{
     @media (max-width:992px) {
