@@ -669,6 +669,7 @@ body {
 				&__title {
 					h5 {
 						margin: 0;
+            font-weight: 900;
 					}
 					p {
 						margin: 0;
@@ -855,4 +856,7 @@ body {
 			}
 		}
 	}
+}
+input{
+  outline: none !important;
 }

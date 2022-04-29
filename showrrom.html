@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/boostrap.css">
+  <link rel="stylesheet" href="./styles/showroom.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Automare - Showroom</title>
+  <link rel="shortcut icon" href="./assets/icons/automare_favicon.png" type="image/x-icon">
+  <link href="./styles/aos.css" rel="stylesheet">
+  <script src="./js/aos.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQP2f7QWI_ntIuWb6U3Mq3RdaqgO1MGxM&libraries=places"></script>
+
+</head>
+
+<body>
+  <div class="navBlack">
+    <div class="container contactHeader">
+      <div class="contactHeader__contact">
+        <div class="item">
+          <div class="item__icon">
+            <img src="./assets/icons/ubicacion.svg" alt="ubicacion">
+          </div>
+          <div class="item__text">
+            <p>Aut. Duarte KM 3 1/2, Pontón, La Vega, Rep. Dom. </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__icon">
+            <img src="./assets/icons/relog.svg" alt="relog">
+          </div>
+          <div class="item__text">
+            <p>Lunes a Sabados 9:00am - 6:00pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="register">
+          <a href="#">Regístrate</a>
+        </div>
+        <div class="contactHeader__social">
+          <div class="item">
+            <div class="item__icon">
+              <img src="./assets/icons/facebook.svg" alt="facebook">
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__icon">
+              <img src="./assets/icons/twitter.svg" alt="twitter">
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__icon">
+              <img src="./assets/icons/instagram.svg" alt="instagram">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_container">
+    <div class="container" id="main">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <a href="./index.html">
+          <img src="./assets/img/logo-Automare-Blanco.webp
+">
+        </a>
+        <ul data-aos="fade-down" data-aos-duration="1500"
+          class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="./index.html" class="nav-link px-2 link-light ">Inicio</a></li>
+          <li><a href="./about.html" class="nav-link px-2 link-light">Sobre nosotros</a></li>
+          <li>
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark   dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="./servicies_taller.html">Taller</a></li>
+                <li><a class="dropdown-item" href="./servicies_rentcar.html">Rent Car</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./showrrom.html" class="nav-link px-2 link-light current">Showroom</a></li>
+          <li><a href="./contact.html" class="nav-link px-2 link-light ">Contacto</a></li>
+        </ul>
+        <div class="searchButton">
+          <img src="./assets/icons/lupa.png">
+        </div>
+        <div class="searchModal">
+          <a href="./index.html">
+            <img src="./assets/img/logo-Automare-Blanco.webp
+">
+          </a>
+
+          <div class="searchModal__container">
+            <div class="searchModal__container__close">
+              <div id="searchClose" class=" is-active hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+              </div>
+            </div>
+            <form class="input">
+              <input placeholder="Buscar..." type="text">
+              <button>Buscar</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="hamburger_menu">
+
+          <div id="menu" class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+          </div>
+          <nav class="menuppal">
+            <a href="/">
+              <img src="./assets/img/logo-Automare-Blanco.webp
+">
+            </a>
+            <form class="input">
+              <input placeholder="Buscar..." type="text">
+              <button>Buscar</button>
+            </form>
+            <ul>
+              <li><a data-aos="fade-down" data-aos-duration="1500" href="./index.html"
+                  class="nav-link px-2 link-light  ">Inicio</a></li>
+              <li><a href="./about.html" class="nav-link px-2 link-light ">Sobre nosotros</a></li>
+              <li>
+                <div class="dropdown text-end">
+                  <a href="#" class=" d-block link-dark   dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="./servicies_taller.html">Taller</a></li>
+                    <li><a class="dropdown-item" href="./servicies_rentcar.html">Rent Car</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="./showrrom.html" class="nav-link px-2 link-light">Showroom</a></li>
+              <li><a href="./contact.html" class="nav-link px-2 link-light current">Contacto</a></li>
+
+            </ul>
+            <div class="navBlack">
+              <div class="container contactHeader">
+                <div class="contactHeader__contact">
+                  <div class="item">
+                    <div class="item__icon">
+                      <img src="./assets/icons/ubicacion.svg" alt="ubicacion">
+                    </div>
+                    <div class="item__text">
+                      <p>Aut. Duarte KM 3 1/2, Pontón, La Vega, Rep. Dom. </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item__icon">
+                      <img src="./assets/icons/relog.svg" alt="relog">
+                    </div>
+                    <div class="item__text">
+                      <p>Lunes a Sabados 9:00am - 6:00pm</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="register">
+                    <a href="#">Regístrate</a>
+                  </div>
+                  <div class="contactHeader__social">
+                    <div class="item">
+                      <div class="item__icon">
+                        <img src="./assets/icons/facebook.svg" alt="facebook">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__icon">
+                        <img src="./assets/icons/twitter.svg" alt="twitter">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__icon">
+                        <img src="./assets/icons/instagram.svg" alt="instagram">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="mainContent container ">
+        <h2 data-aos="fade-down" data-aos-duration="1000">Showroom</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container__filter">
+    <div class="row">
+      <div class=" filter col-lg-4">
+        <div data-aos="fade-right" data-aos-duration="1700" class="filter__howmany">
+          <div class="filter__howmany__img">
+            <img src="./assets/icons/filter.svg" alt="">
+            <span>Filtro</span>
+          </div>
+          <span>Mostrando 1 a 6 de 20 resultados</span>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1700" class="filter__search border">
+          <h3>Buscar por modelo</h3>
+          <form>
+            <input placeholder="Buscar modelo..." type="text">
+            <button><img src="./assets/icons/filter-lupa.svg"></button>
+          </form>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1700" class="filter__brands border">
+          <h3>Seleccionar marca de vehículo</h3>
+          <div class="list">
+            <div class="item">
+              <div class="img">
+                <img src="./assets/icons/honda-filter.svg" alt="">
+                <span>Honda</span>
+              </div>
+              <span>(15)</span>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="./assets/icons/nissan.svg" alt="">
+                <span>Nissan</span>
+              </div>
+              <span>(3)</span>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="./assets/icons/kn.svg" alt="">
+                <span>Kia</span>
+              </div>
+              <span>(24)</span>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="./assets/icons/chevrolet.svg" alt="">
+                <span>Chevrolet</span>
+              </div>
+              <span>(2)</span>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1700" class="filter__seats border">
+          <h3>Seleccionar cantidad de asientos</h3>
+          <div class="options">
+            <div class="option">
+              <span>2 asientos</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>4 asientos</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>6 asientos</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>8 asientos</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>10 asientos</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>12 asientos</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1700" class="filter__type border">
+          <h3>Seleccionar tipo de vehículo</h3>
+          <div class="options">
+            <div class="option">
+              <span>Sedan</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>SUV's</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>Coupe</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>Hatchback</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>Truck</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>Cabriolet</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>Comercial</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+            <div class="option">
+              <span>Van</span>
+              <label class="checkboxWrapper">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="checkborder"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" right col-lg-8">
+        <div class="cards">
+          <div data-aos="fade-up" data-aos-duration="1700" class="card">
+            <div class="card__img">
+              <img src="./assets/img/kia.webp" class="card-img-top">
+            </div>
+            <div class="card__title">
+              <h5>Nissan Frontier NP 300</h5>
+              <p>Año 2020</p>
+            </div>
+            <div class="card__price">
+              <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+            </div>
+            <hr>
+            <div class="card__features">
+              <div class="icon">
+                <img src="./assets/icons/gasolina.svg">
+                <p>Gasoil</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/volante.svg">
+                <p>Mecánico</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/carWithPeople.svg">
+                <p>5 pasajeros</p>
+              </div>
+              <div class="icon">
+                <img class="car" src="./assets/icons/car.svg">
+                <p>SUV</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/wheels.svg">
+                <p>4x4</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/gps.svg">
+                <p>GPS</p>
+              </div>
+            </div>
+            <hr>
+            <div class="card__benefits">
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Garantía de funcionamiento.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Gasolina full.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Mantenimiento al día.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Reserva inmediata.</p>
+              </div>
+            </div>
+            <a href="./vehicle.html">
+              <button>Reservar Ahora</button>
+            </a>
+          </div>
+          <div data-aos="fade-down" data-aos-duration="1700" class="card">
+            <div class="card__img">
+              <img src="./assets/img/kia.webp" class="card-img-top">
+            </div>
+            <div class="card__title">
+              <h5>Nissan Frontier NP 300</h5>
+              <p>Año 2020</p>
+            </div>
+            <div class="card__price">
+              <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+            </div>
+            <hr>
+            <div class="card__features">
+              <div class="icon">
+                <img src="./assets/icons/gasolina.svg">
+                <p>Gasoil</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/volante.svg">
+                <p>Mecánico</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/carWithPeople.svg">
+                <p>5 pasajeros</p>
+              </div>
+              <div class="icon">
+                <img class="car" src="./assets/icons/car.svg">
+                <p>SUV</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/wheels.svg">
+                <p>4x4</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/gps.svg">
+                <p>GPS</p>
+              </div>
+            </div>
+            <hr>
+            <div class="card__benefits">
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Garantía de funcionamiento.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Gasolina full.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Mantenimiento al día.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Reserva inmediata.</p>
+              </div>
+            </div>
+            <a href="./vehicle.html">
+              <button>Reservar Ahora</button>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1700" class="card">
+            <div class="card__img">
+              <img src="./assets/img/kia.webp" class="card-img-top">
+            </div>
+            <div class="card__title">
+              <h5>Nissan Frontier NP 300</h5>
+              <p>Año 2020</p>
+            </div>
+            <div class="card__price">
+              <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+            </div>
+            <hr>
+            <div class="card__features">
+              <div class="icon">
+                <img src="./assets/icons/gasolina.svg">
+                <p>Gasoil</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/volante.svg">
+                <p>Mecánico</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/carWithPeople.svg">
+                <p>5 pasajeros</p>
+              </div>
+              <div class="icon">
+                <img class="car" src="./assets/icons/car.svg">
+                <p>SUV</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/wheels.svg">
+                <p>4x4</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/gps.svg">
+                <p>GPS</p>
+              </div>
+            </div>
+            <hr>
+            <div class="card__benefits">
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Garantía de funcionamiento.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Gasolina full.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Mantenimiento al día.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Reserva inmediata.</p>
+              </div>
+            </div>
+            <a href="./vehicle.html">
+              <button>Reservar Ahora</button>
+            </a>
+          </div>
+          <div data-aos="fade-down" data-aos-duration="1700" class="card">
+            <div class="card__img">
+              <img src="./assets/img/kia.webp" class="card-img-top">
+            </div>
+            <div class="card__title">
+              <h5>Nissan Frontier NP 300</h5>
+              <p>Año 2020</p>
+            </div>
+            <div class="card__price">
+              <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+            </div>
+            <hr>
+            <div class="card__features">
+              <div class="icon">
+                <img src="./assets/icons/gasolina.svg">
+                <p>Gasoil</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/volante.svg">
+                <p>Mecánico</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/carWithPeople.svg">
+                <p>5 pasajeros</p>
+              </div>
+              <div class="icon">
+                <img class="car" src="./assets/icons/car.svg">
+                <p>SUV</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/wheels.svg">
+                <p>4x4</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/gps.svg">
+                <p>GPS</p>
+              </div>
+            </div>
+            <hr>
+            <div class="card__benefits">
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Garantía de funcionamiento.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Gasolina full.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Mantenimiento al día.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Reserva inmediata.</p>
+              </div>
+            </div>
+            <a href="./vehicle.html">
+              <button>Reservar Ahora</button>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1700" class="card">
+            <div class="card__img">
+              <img src="./assets/img/kia.webp" class="card-img-top">
+            </div>
+            <div class="card__title">
+              <h5>Nissan Frontier NP 300</h5>
+              <p>Año 2020</p>
+            </div>
+            <div class="card__price">
+              <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+            </div>
+            <hr>
+            <div class="card__features">
+              <div class="icon">
+                <img src="./assets/icons/gasolina.svg">
+                <p>Gasoil</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/volante.svg">
+                <p>Mecánico</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/carWithPeople.svg">
+                <p>5 pasajeros</p>
+              </div>
+              <div class="icon">
+                <img class="car" src="./assets/icons/car.svg">
+                <p>SUV</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/wheels.svg">
+                <p>4x4</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/gps.svg">
+                <p>GPS</p>
+              </div>
+            </div>
+            <hr>
+            <div class="card__benefits">
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Garantía de funcionamiento.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Gasolina full.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Mantenimiento al día.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Reserva inmediata.</p>
+              </div>
+            </div>
+            <a href="./vehicle.html">
+              <a href="./vehicle.html">
+                <button>Reservar Ahora</button>
+              </a>
+            </a>
+          </div>
+          <div data-aos="fade-down" data-aos-duration="1700" class="card">
+            <div class="card__img">
+              <img src="./assets/img/kia.webp" class="card-img-top">
+            </div>
+            <div class="card__title">
+              <h5>Nissan Frontier NP 300</h5>
+              <p>Año 2020</p>
+            </div>
+            <div class="card__price">
+              <p><span>$50</span>/Día <span class="BarraLateral"></span> <span>$1500</span>/Mensual</p>
+            </div>
+            <hr>
+            <div class="card__features">
+              <div class="icon">
+                <img src="./assets/icons/gasolina.svg">
+                <p>Gasoil</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/volante.svg">
+                <p>Mecánico</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/carWithPeople.svg">
+                <p>5 pasajeros</p>
+              </div>
+              <div class="icon">
+                <img class="car" src="./assets/icons/car.svg">
+                <p>SUV</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/wheels.svg">
+                <p>4x4</p>
+              </div>
+              <div class="icon">
+                <img src="./assets/icons/gps.svg">
+                <p>GPS</p>
+              </div>
+            </div>
+            <hr>
+            <div class="card__benefits">
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Garantía de funcionamiento.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Gasolina full.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Mantenimiento al día.</p>
+              </div>
+              <div class="benefit">
+                <img src="./assets/icons/redCheck.svg">
+                <p>Reserva inmediata.</p>
+              </div>
+            </div>
+            <a href="./vehicle.html">
+              <button>Reservar Ahora</button>
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1700" class="pagination">
+          <ul>
+            <li><a class="border current" href="#">1</a></li>
+            <li><a class="border" href="#">2</a></li>
+            <li><a class="border" href="#">3</a></li>
+            <li><a class="border" href="#">4</a></li>
+            <li><a class="border" href="#">5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer data-aos="fade-up" data-aos-duration="1600" class="footer bd-footer py-5">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 link-dark  " href="/" aria-label="Bootstrap">
+            <img src="./assets/img/logo-Automare-Blanco.webp
+" alt="logo">
+          </a>
+          <div class="footer__item">Nuestro compromiso es ser la empresa modelo en ventas y rentas de vehículos más
+            grande e
+            innovadora del país, reconocida nacional e internacionalmente, siendo la mejor empresa en satisfacer todas
+            necesidades de nuestros clientes.</div>
+          <div class="footer__item">
+            <div class="item">
+              <div class="item__icon">
+                <img src="./assets/icons/ubicacion.svg" alt="ubicacion">
+              </div>
+              <div class="item__text">
+                <p>Autopista. Duarte KM 3 1/2. <br> Pontón, La Vega, Rep. Dom. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h5>Servicios</h5>
+          <div class="barra"></div>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Taller</a></li>
+            <li class="mb-2"><a href="#">Rent Car</a></li>
+            <li class="mb-2"><a href="#">Galería de Disponible</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h5>Marcas</h5>
+          <div class="barra"></div>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Honda</a></li>
+            <li class="mb-2"><a href="#">Kia</a></li>
+            <li class="mb-2"><a href="#">Nissan</a></li>
+            <li class="mb-2"><a href="#">Chevrolet</a></li>
+            <li class="mb-2"><a href="#">Toyota</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h5>Community</h5>
+          <div class="barra"></div>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a target="_blank" href="mailto:servicios@automare.com">
+                <div class="item">
+                  <div class="check"><img src="./assets/icons/email.svg"></div>
+                  <p>servicios@automare.com
+                  </p>
+                </div>
+              </a></li>
+
+
+            <li class="mb-2">
+
+              <a href="https://api.whatsapp.com/send?phone=8095739898" target="_blank">
+                <div class="item">
+                  <div class="check"><img src="./assets/icons/phone.svg"></div>
+                  <p>809-573-9898
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="mb-2"><a href="#">
+                <div class="item">
+                  <div class="check"><img src="./assets/icons/relog.svg"></div>
+                  <p>Lunes a Sábado <br>
+                    9:00am a 6:00pm
+                  </p>
+                </div>
+              </a></li>
+            <li class="mb-2">
+              <div class="social">
+                <a href="#">
+
+                  <div class="item__icon">
+                    <img src="./assets/icons/facebook.svg" alt="facebook">
+                  </div>
+                </a>
+                <a href="#">
+
+                  <div class="item__icon">
+                    <img src="./assets/icons/twitter.svg" alt="twitter">
+                  </div>
+                </a>
+                <a href="#">
+
+                  <div class="item__icon">
+                    <img src="./assets/icons/instagram.svg" alt="instagram">
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="https://api.whatsapp.com/send?phone=8095739898" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+
+  </div>
+  <script src="./js/boostraps.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
