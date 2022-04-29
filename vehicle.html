@@ -330,10 +330,19 @@
             <input type="text" placeholder="Dirección de llegada">
           </div>
           <div class="col-lg-6">
-            <input type="text" placeholder="Cantidad de personas">
+            <select class="form-select">
+              <option selected>Cantidad de personas</option>
+              <option value="1">1 persona</option>
+              <option value="2">4 personas</option>
+              <option value="3">8 personas</option>
+            </select>
           </div>
           <div class="col-lg-6">
-            <input type="text" placeholder="Cantidad de equipaje">
+            <select class="form-select">
+              <option selected>Cantidad de equipaje</option>
+              <option value="1">Por 3 Día</option>
+              <option value="2">Por 7 Día</option>
+            </select>
           </div>
           <div class="dataTime col-lg-6">
             <input placeholder="Fecha de viaje" />
@@ -351,39 +360,75 @@
       <div data-aos="fade-down" data-aos-duration="1500" class=" right col-lg-3">
         <h3>Método de pago</h3>
         <div class="options">
-          <label for="backingInput" class="radio">
-            <input type="radio" name="select" id="backingInput" checked>
-            <span class="radio__mark"></span>
-            Transferencia Bancaria
-          </label>
-          <p id="backing">
-            Deposite su pago directamente a nuestra cuenta.
-            Favor dejar su nombre y vehículo a reservar
-            como información en el pago.
-          </p>
-          <label for="checkInput" class="radio">
-            <input type="radio" name="select" id="checkInput">
-            <span class="radio__mark"></span>
-            Cheque
-          </label>
-
-          <p id="check" class="notVisible">
-            Deposite su pago directamente a nuestra cuenta.
-            Favor dejar su nombre y vehículo a reservar
-            como información en el pago.
-          </p>
-          <label for="cardInput" class="radio">
-            <input type="radio" name="select" id="cardInput">
-            <span class="radio__mark"></span>
-            Tarjeta de Crédito
-          </label>
-          <p id="card" class="notVisible">
-            Deposite su pago directamente a nuestra cuenta.
-            Favor dejar su nombre y vehículo a reservar
-            como información en el pago.
-          </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <label for="backingInput" class="radio">
+                    <input type="radio" name="select" id="backingInput" checked>
+                    <span class="radio__mark"></span>
+                    Transferencia Bancaria
+                  </label>
+  
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Deposite su pago directamente a nuestra cuenta.
+                    Favor dejar su nombre y vehículo a reservar
+                    como información en el pago.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <label for="checkInput" class="radio">
+                    <input type="radio" name="select" id="checkInput">
+                    <span class="radio__mark"></span>
+                    Cheque
+                  </label>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Deposite su pago directamente a nuestra cuenta.
+                  Favor dejar su nombre y vehículo a reservar
+                  como información en el pago.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <label for="cardInput" class="radio">
+                    <input type="radio" name="select" id="cardInput">
+                    <span class="radio__mark"></span>
+                    Tarjeta de Crédito
+                  </label>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Deposite su pago directamente a nuestra cuenta.
+                  Favor dejar su nombre y vehículo a reservar
+                  como información en el pago.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <button>Hacer Reserva</button>
+        <br>
+        
       </div>
     </div>
   </div>
