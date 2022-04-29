@@ -27,6 +27,7 @@ html {
 }
 
 .aboutUs {
+  margin-top: 0px !important;
 	@extend .center;
 	gap: 20px;
   @media (max-width: 1400px) {
